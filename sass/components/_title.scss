@@ -1,0 +1,15 @@
+.title {
+font-size: 48px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+text-align: center;
+color: var(--text-color-primary);
+}
+.title-accent {
+    color: var(--accent-color);
+}
+@media screen and (min-width: 1440px) {
+  .title{
+    font-size: 64px;
+  }
+}

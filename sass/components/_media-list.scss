@@ -1,0 +1,34 @@
+
+.media-list{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 260px;
+}
+.media-list__icon-instagram {
+    width: 26px;
+    height: 26px;
+}
+.media-list__icon-facebook {
+    width: 15px;
+    height: 26px;
+}
+.media-list__icon-vk {
+    width: 26px;
+    height: 14px;
+   
+}
+.media-list__icon-youtube {
+    width: 26px;
+    height: 18px;
+    
+}
+.media-list__icon {
+    fill: var(--svg-fill);
+    transition: fill var(--transition-animation);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}

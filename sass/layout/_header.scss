@@ -1,0 +1,120 @@
+.page-header__container {
+   display: flex;
+   position: relative;
+   align-items: center;
+   padding-top: 42px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu__link {
+     transition: color var(--transition-animation);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+.contact-phone {
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-left: auto;
+
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        left: 0;
+        bottom: -4px;
+        height: 2px;
+        background: var(--accent-color);
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+       .open-mobile-menu-btn {
+        z-index: 3;
+        line-height: 0;
+        border: none;
+        background-color: transparent;
+        margin-right: auto;
+    }
+
+    .open-mobile-menu-btn__icon {
+        width: 26px;
+        height: 20px;
+        fill: var(--light-color);
+    }
+}
+
+@media screen and (min-width: 992px) {
+     .open-mobile-menu-btn {
+        display: none;
+    }
+     .menu {
+        display: flex;
+        gap: 60px;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }    
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 300px;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: #333;
+}
+
+@media screen and (min-width: 992px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;      
+}
+ .page-header.menu-open .open-mobile-menu-btn {
+  display: none;
+}
+.mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 100%;
+    padding-top: 140px;
+    padding-left: 40px;
+}
+
+.mobile-menu__close-btn {
+    position: absolute;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+    top: 30px;
+    line-height: 0;
+}
+.mobile-menu__close-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--light-color);
+}

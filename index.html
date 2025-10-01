@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big-Theatre</title>
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <ul class="menu list">
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link link">головна</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link link">про театр</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link link">наші постановки</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link link">партнери театру</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link link">контакти</a>
+          </li>
+        </ul>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+          </button>
+        <a href="tel:+380956507179" class="contact-phone link">+38 (095) 650-71-79</a>
+        <div class="mobile-menu js-menu" data-menu>
+            <div class="mobile-menu__container">
+              <button class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon">
+                  <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="mobile-menu-nav js-nav list">
+                <li class="mobile-menu__item">
+                  <a href="./index.html" class="mobile-menu__link link">головна</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link link">про театр</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link link">наші постановки</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link link">партнери театру</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link link">контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+    </header>
+     <main>
+      <section class="hero">      
+          <div class="hero__container container">
+            <aside class="fixed-panel">
+              <p class="fixed-panel__text">контактна інформація</p>
+              <ul class="fixed-panel__list media-list list">
+                <li class="media-list__item">
+                  <a href="#" class="media-list__link link">
+                    <svg class="media-list__icon-instagram media-list__icon">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="media-list__item">
+                  <a href="#" class="media-list__link link">
+                    <svg class="media-list__icon-facebook media-list__icon">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="media-list__item">
+                  <a href="#" class="media-list__link link">
+                    <svg class="media-list__icon-vk media-list__icon">
+                      <use href="./images/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="media-list__item">
+                  <a href="#" class="media-list__link link">
+                    <svg class="media-list__icon-youtube media-list__icon">
+                      <use href="./images/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+            <div class="hero__text-wrapper">
+              <h1 class="hero__title">театр ім. Лесі Українки</h1>
+              <ul class="hero__list list">
+                <li class="hero__item"><p class="hero__text text">У самому центрі історичної частини Києва, за два кроки від Хрещатика, неподалік від Золотих воріт, на розі двох старовинних вулиць - Пушкінської та Богдана Хмельницького – постає будівля, добре відома киянам та гостям столиці України як Театр імені Лесі Українки.</p>
+              </li>
+                <li class="hero__item"><p class="hero__text text">Цінність будь-якого театру, його популярність у глядача завжди визначається наявністю в ньому яскравих індивідуальностей.</p>
+              </li>
+                <li class="hero__item"><p class="hero__text text">Київський театр імені Лесі Українки завжди славився своїми акторськими та режисерськими індивідуальностями. Театр завжди був і залишається театром ансамблю.</p>
+              </li>
+              </ul>
+              <button class="hero__btn btn">афіша</button>
+            </div>
+            <div class="swiper__container"> 
+              <div class="swiper main-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="./images/1920/hero-1.webp" type="image/webp"/>
+                      <img
+                      src="./images/1920/hero-1.jpg"
+                      alt="poster-1"
+                      loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="./images/1920/hero-2.webp" type="image/webp"/>
+                      <img
+                      src="./images/1920/hero-2.jpg"
+                      alt="poster-2"
+                      loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="./images/1920/hero-3.webp" type="image/webp"/>
+                      <img
+                      src="./images/1920/hero-3.jpg"
+                      alt="poster-3"
+                      loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-controls">
+                  <div class="swiper-button-prev swiper-button">
+                    <!-- <svg class="swiper-button-prev__icon swiper-button__icon">
+                      <use href=".sprite.svg#icon-arrow"></use>
+                    </svg> -->
+                    <span class="swiper-button-prev__text">попередня</span>
+                </div>
+                  <div class="swiper-button-next swiper-button">
+                    <!-- <svg class="swiper-button-prev__icon swiper-button__icon">
+                      <use href="./images/sprite.svg#icon-arrow-1"></use>
+                    </svg> -->
+                    <span class="swiper-button-prev__text">наступна</span>
+                </div> 
+              </div>
+              <div class="swiper thumbs-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="./images/1920/hero-2.webp" type="image/webp"/>
+                      <img
+                      src="./images/1920/hero-2.jpg"
+                      alt="poster-2"
+                      loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="./images/1920/hero-3.webp" type="image/webp"/>
+                      <img
+                      src="./images/1920/hero-3.jpg"
+                      alt="poster-3"
+                      loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="./images/1920/hero-1.webp" type="image/webp"/>
+                      <img
+                      src="./images/1920/hero-1.jpg"
+                      alt="poster-1"
+                      loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container container">
+          <h2 class="about__title title"><span class="title-accent">про </span> театр</h2>
+          <div class="about__wrapper">
+            <div class="about__best-theatre">
+            <h3 class="about__numbers__title">кращий театр в області</h3>
+            <p class="about__text text">Всі ці імена загальновідомі, як загальновідомо і те, що марка Театру імені Лесі Українки завжди привертала до себе не тільки професіоналів, але й непересічних глядачів сотень міст нинішнього простору СНД, де проходили гастролі театру. Офіційна біографія Національного академічного театру російської драми імені Лесі Українки починається в 1926 році, коли рішенням Київського окрвиконкому була організована в Києві Російська державна драма, і 15 жовтня того ж року театр відкрив свій перший сезон. У 1941 році йому було присвоєно ім'я Лесі Українки.</p>
+          </div>
+          <div class="about__numbers">
+            <h3 class="about__numbers__title">трохи про цифри</h3>
+            <div class="about__numbers__box">
+             <svg class="about__numbers__icon about__numbers__icon-armchair">
+                <use href="./images/sprite.svg#icon-armchair"></use>
+              </svg>
+             <p class="about__numbers__text"><span class="about__numbers__text-accent">1600  </span>посадочних місць</p>
+            </div>
+            <div class="about__numbers__box">
+             <svg class="about__numbers__icon about__numbers__icon-theater">
+                <use href="./images/sprite.svg#icon-theater"></use>
+              </svg>
+             <p class="about__numbers__text"><span class="about__numbers__text-accent">350 </span>років історії</p>
+            </div>
+          </div>
+          <div class="about__img-wrapper">
+             <picture>
+                <source srcset="./images/1920/about.webp" type="image/webp" />
+                <img
+                  class="about__img"
+                  src="./images/1920/about.jpg"
+                  alt="about__img"
+                  loading="lazy"
+                />
+              </picture>
+          </div>
+        </div>
+
+        </div>
+
+      </section>
+
+
+     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="./js/menu.js"></script>
+ <script src="./js/swiber.js"></script>
+  </body>
+</html>

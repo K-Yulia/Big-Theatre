@@ -1,0 +1,129 @@
+.hero {
+    background-image:
+    url("..//../images/576/hero-bg_576.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;  
+  align-items: flex-end;
+  height: 600px;
+  margin-top: -90px;
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+    background-image:
+    url("../images/1920/hero-bg_1920.jpg");
+    height: 1040px;
+    margin-top: -72px;
+}
+}
+.fixed-panel{
+    display: none;
+}
+@media screen and (min-width: 992px) {
+.fixed-panel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 1045px;
+    background: var(--bg-fixed-panel);
+    display: flex;
+    flex-direction: column;
+    padding-top: 500px;
+    align-items: center;
+}
+
+.fixed-panel__text {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-color-third);
+    transform: rotate(-90deg);
+    width: 220px;
+}
+.fixed-panel__text::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 80px;
+    background: var(--text-color-third);
+    top: 50%;
+    left: -120px;
+}
+}
+
+.hero__container {
+    display: flex;
+}
+
+.hero__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    // max-width: 510px;
+    // margin-right: 74px;
+}
+
+@media screen and (min-width: 992px) {
+  .hero__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 594px;
+    margin-right: 74px;
+}
+}
+.hero__title {
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+    .hero__title {
+    margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .hero__title {
+    font-size: 48px;
+letter-spacing: 0.1em;
+margin-bottom: 24px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .hero__title {
+   margin-bottom: 53px;
+    }
+}
+
+.hero__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    max-width: 510px;
+    margin-bottom: 44px;
+}
+@media screen and (min-width: 1440px) {
+   .hero__list {
+    // display: flex;
+    // flex-direction: column;
+    row-gap: 22px;
+    width: 580px;
+    margin-bottom: 46px;
+}
+}
+
+.hero__btn {
+    margin-bottom: 68px;
+    margin-right: auto;
+}
+@media screen and (min-width: 1440px) {
+    .hero__btn {
+    margin-bottom: 212px;
+    // margin-right: auto;
+}
+}

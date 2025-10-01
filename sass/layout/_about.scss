@@ -1,0 +1,39 @@
+.about {
+    padding-top: 150px;
+}
+.about__wrapper {
+    display: flex;
+    padding-top: 78px;
+}
+.about__best-theatre {
+    width: 445px;
+    // height: 273px; 
+    margin-right: 30px;
+}
+
+.about__numbers__title {
+    font-size: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-bottom: 34px;
+}
+
+.about__numbers {
+    margin-right: auto;
+}
+.about__numbers__text {
+font-size: 16px;
+letter-spacing: 0.05em;
+margin-top: 13px;
+}
+.about__numbers__text-accent {
+    color: var(--accent-color);
+}
+.about__numbers__icon {
+width: 70px;
+height: 70px;
+fill: var(--light-color);
+}
+.about__numbers__icon-theater {
+    margin-top: 18px;
+}
