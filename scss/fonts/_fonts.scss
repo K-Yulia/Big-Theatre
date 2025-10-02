@@ -20,9 +20,11 @@
     font-style: normal;
 }
 @font-face {
-    font-family: "Open Sans Condensed";
-    font-display: swap;
-    src: url("/fonts/OpenSans-CondensedBold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
+     font-family: "Open Sans Condensed";
+  font-display: swap;
+  src: url("/fonts/OpenSans-CondensedBold.woff2") format("woff2"),
+       url("/fonts/OpenSans-CondensedBold.woff") format("woff"),
+       url("/fonts/OpenSans-CondensedBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
