@@ -1,11 +1,13 @@
 const thumbsSwiper = new Swiper('.thumbs-slider',
     { spaceBetween: 10,
         slidesPerView: 1,
-        freeMode: true,
-        watchSlidesProgress: true, 
+        allowTouchMove: false,
+        // freeMode: true,
+        // watchSlidesProgress: true, 
     }); 
 const mainSwiper = new Swiper('.main-slider',
-    { loop: true,
+    { 
+        // loop: true,
         spaceBetween: 10,
         navigation: { 
             nextEl: '.swiper-button-next',
