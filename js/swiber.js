@@ -1,9 +1,9 @@
 const thumbsSwiper = new Swiper('.thumbs-slider',
     { spaceBetween: 10,
         slidesPerView: 1,
-        allowTouchMove: false,
         // freeMode: true,
-        // watchSlidesProgress: true, 
+        watchSlidesProgress: true, 
+        simulateTouch: false,
     }); 
 const mainSwiper = new Swiper('.main-slider',
     { 
@@ -16,4 +16,6 @@ const mainSwiper = new Swiper('.main-slider',
         thumbs: { 
             swiper: thumbsSwiper,
         }, 
+        watchSlidesProgress: true, 
+        simulateTouch: false,
     });

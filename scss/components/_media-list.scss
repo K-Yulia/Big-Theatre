@@ -2,8 +2,9 @@
 .media-list{
     display: flex;
     flex-direction: column;
-    gap: 23px;
-    margin-top: 260px;
+    gap: 25px;
+    margin-top: 258px;
+    margin-bottom: 80px;
 }
 .media-list__icon-instagram {
     width: 26px;
@@ -12,6 +13,7 @@
 .media-list__icon-facebook {
     width: 15px;
     height: 26px;
+    padding-left: 5px;
 }
 .media-list__icon-vk {
     width: 26px;
