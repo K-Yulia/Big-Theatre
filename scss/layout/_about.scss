@@ -1,7 +1,7 @@
 .about {
-    padding-top: 80px;
+    margin-top: 80px;
     text-align: center;
-    padding-bottom: 111px;
+    // padding-bottom: 111px;
 }
 // .about__title {
 //     margin-top: ;
@@ -55,7 +55,7 @@ fill: var(--light-color);
 
 @media screen and (min-width: 768px) {
  .about {
-    padding-top: 90px;    
+    margin-top: 90px;    
 }
 .about__wrapper {
     display: flex;
@@ -75,7 +75,7 @@ fill: var(--light-color);
 
 @media screen and (min-width: 992px) {
  .about {
-    padding-top: 150px;
+    margin-top: 150px;
 }
 .about__wrapper {
     margin-top: 100px;
