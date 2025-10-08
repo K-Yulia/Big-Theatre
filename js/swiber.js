@@ -20,18 +20,39 @@ const mainSwiper = new Swiper('.main-slider',
         simulateTouch: false,
     });
 
-    const swiper = new Swiper('.projects__slider', {
+
+    const projectsSwiper = new Swiper('.projects__slider', {
     slidesPerView: 4,
-    // spaceBetween: 20,
-    // loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.projects__slider__next',
+      prevEl: '.projects__slider__prev',
     },
     breakpoints: {
-      1024: { slidesPerView: 4 },
+      1440: { slidesPerView: 4, },
       992: { slidesPerView: 1.56 },
       768: { slidesPerView: 1.55 },
       576: { slidesPerView: 1.15 },
+    },
+  });
+
+
+
+  const swiper = new Swiper('.partners__slider', {
+    slidesPerView: 4,
+    simulateTouch: false,
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    breakpoints: {
+      1440: { spaceBetween: 28,
+        slidesPerView: 4 },
+      992: { 
+        spaceBetween: 27,
+        slidesPerView: 2.41 },
+      768: { spaceBetween: 28,
+        slidesPerView: 2.45 },
+      576: { spaceBetween: 27,
+        slidesPerView: 1.8 },
     },
   });

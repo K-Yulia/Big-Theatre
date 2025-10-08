@@ -142,6 +142,9 @@ text-transform: uppercase;
 .projects__slider__title {
   left: 38px;
 }
+.projects__slider__span {
+        left: -10px;
+}
 }
 @media screen and (min-width:1440px){
 .projects {
@@ -160,6 +163,7 @@ margin-left: 150px;
 }
 .projects__slider__span {
     left: -6px;
+    bottom: 85px;
 }
 
 }

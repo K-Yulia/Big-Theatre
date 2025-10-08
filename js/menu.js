@@ -32,3 +32,15 @@ function onListClick(ev) {
   refs.burgerMenu.classList.remove('is-open');
   refs.header.classList.remove("menu-open");
   }
+
+
+
+  window.addEventListener("scroll", function () {
+  const header = document.querySelector(".page-header");
+  if (window.scrollY > 70) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+  
