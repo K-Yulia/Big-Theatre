@@ -1,13 +1,12 @@
 const thumbsSwiper = new Swiper('.thumbs-slider',
     { spaceBetween: 10,
         slidesPerView: 1,
-        // freeMode: true,
         watchSlidesProgress: true, 
         simulateTouch: false,
     }); 
 const mainSwiper = new Swiper('.main-slider',
     { 
-        // loop: true,
+       
         spaceBetween: 10,
         navigation: { 
             nextEl: '.swiper-button-next',
@@ -40,10 +39,7 @@ const mainSwiper = new Swiper('.main-slider',
   const swiper = new Swiper('.partners__slider', {
     slidesPerView: 4,
     simulateTouch: false,
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
+    
     breakpoints: {
       1440: { spaceBetween: 28,
         slidesPerView: 4 },

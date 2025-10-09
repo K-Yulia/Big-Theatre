@@ -13,4 +13,10 @@ background: var(--accent-color);
 color: var(--text-color-primary);
 border: transparent;
 cursor: pointer;
+transition: transform var(--transition-animation);
+
+&:focus,
+&:hover {
+transform: scale(1.05);
+}
 }

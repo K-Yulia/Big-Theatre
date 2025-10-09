@@ -113,6 +113,10 @@ body {
   color: var(--text-color-primary);
   border: transparent;
   cursor: pointer;
+  transition: transform var(--transition-animation);
+}
+.btn:focus, .btn:hover {
+  transform: scale(1.05);
 }
 
 .title {
@@ -188,7 +192,7 @@ body {
     height: 490px;
     top: -115px;
   }
-  .swiper-slide img {
+  .main-slider__slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -201,17 +205,17 @@ body {
     height: 490px;
     width: 350px;
   }
-  .thumbs-slider .swiper-slide {
+  .thumbs-slider__slide {
     position: relative;
     width: 350px;
     cursor: pointer;
   }
-  .thumbs-slider img {
+  .thumbs-slider__slideimg {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .thumbs-slider .swiper-slide::after {
+  .thumbs-slider__slide::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -226,8 +230,8 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  .slider-controls .swiper-button-prev,
-  .slider-controls .swiper-button-next {
+  .swiper-button-prev,
+  .swiper-button-next {
     position: absolute;
     display: flex;
     align-items: center;
@@ -236,22 +240,22 @@ body {
     border: none;
     color: var(--light-color);
   }
-  .slider-controls .swiper-button-prev {
+  .swiper-button-prev {
     left: 69px;
   }
-  .slider-controls .swiper-button-next {
+  .swiper-button-next {
     right: 45px;
   }
-  .slider-controls .swiper-button__icon {
+  .swiper-button__icon {
     position: absolute;
     width: 48px;
     height: 16px;
     fill: var(--light-color);
   }
-  .slider-controls .swiper-button-prev__icon {
+  .swiper-button-prev__icon {
     left: -75px;
   }
-  .slider-controls .swiper-button-next__icon {
+  .swiper-button-next__icon {
     left: 65px;
     transform: rotate(180deg);
   }
@@ -306,6 +310,9 @@ body {
   height: 2px;
   background: var(--accent-color);
 }
+.contact-phone:hover, .contact-phone:focus {
+  color: var(--accent-color);
+}
 
 @media screen and (max-width: 991px) {
   .open-mobile-menu-btn {
@@ -320,6 +327,9 @@ body {
     height: 20px;
     fill: var(--light-color);
     padding-top: 3px;
+  }
+  .open-mobile-menu-btn__icon:hover, .open-mobile-menu-btn__icon:focus {
+    fill: var(--accent-color);
   }
 }
 .mobile-menu {
@@ -368,6 +378,9 @@ body {
   width: 25px;
   height: 25px;
   fill: var(--light-color);
+}
+.mobile-menu__close-icon:hover, .mobile-menu__close-icon:focus {
+  fill: var(--accent-color);
 }
 
 .mobile-menu-nav {
@@ -1142,7 +1155,7 @@ body {
 .patron-form__input::placeholder {
   color: var(text-color-secondary);
 }
-.patron-form__input:focus {
+.patron-form__input:hover, .patron-form__input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -1165,7 +1178,7 @@ body {
 .patron-form__message::placeholder {
   color: var(text-color-secondary);
 }
-.patron-form__message:focus {
+.patron-form__message:hover, .patron-form__message:focus {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -1227,6 +1240,23 @@ body {
   text-decoration-skip-ink: none;
 }
 
+.patron__contacts__phone-number {
+  color: var(--light-color);
+}
+.patron__contacts__phone-number:hover, .patron__contacts__phone-number:focus {
+  color: var(--accent-color);
+}
+
+.patron__contacts__mail:hover,
+.patron__contacts__mail:focus {
+  color: var(--accent-color);
+}
+
+.patron__contacts__address:hover,
+.patron__contacts__address:focus {
+  color: var(--accent-color);
+}
+
 @media screen and (min-width: 768px) {
   .patron {
     margin-top: 160px;
@@ -1278,7 +1308,7 @@ body {
     margin-bottom: 80px;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .patron {
     margin-top: 120px;
   }
@@ -1297,6 +1327,9 @@ body {
   }
   .patron-form__input-field {
     grid-template-columns: 1fr 310px;
+  }
+  .patron-form__btn-box {
+    margin-bottom: 0;
   }
   .patron__contacts {
     width: 336px;
@@ -1356,7 +1389,7 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .page-footer {
-    margin-top: 0;
+    margin-top: 80px;
   }
   .page-footer__text-box {
     width: 100%;

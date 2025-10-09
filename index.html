@@ -4,6 +4,7 @@
  <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big-Theatre</title>
+     <link rel="icon" href="./images/favicon.ico">
     <link href="https://fonts.cdnfonts.com/css/open-sans-condensed-2" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -148,8 +149,8 @@
             </div>
             <div class="swiper__container"> 
               <div class="swiper main-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                <div class="swiper-wrapper main-slider__wrapper">
+                  <div class="swiper-slide main-slider__slide">
                     <picture>
                       <source srcset="./images/1920/hero-1.webp" type="image/webp"/>
                       <img
@@ -159,7 +160,7 @@
                       />
                     </picture>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide main-slider__slide">
                     <picture>
                       <source srcset="./images/1920/hero-2.webp" type="image/webp"/>
                       <img
@@ -169,7 +170,7 @@
                       />
                     </picture>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide main-slider__slide">
                     <picture>
                       <source srcset="./images/1920/hero-3.webp" type="image/webp"/>
                       <img
@@ -186,18 +187,18 @@
                    <svg class="swiper-button-prev__icon swiper-button__icon">
                       <use href="./images/sprite.svg#icon-arrow-1"></use>
                     </svg>
-                    <span class="swiper-button-prev__text">Попередня</span>
+                    <span class="swiper-button-prev__text swiper-button__text">Попередня</span>
                 </div>
                   <div class="swiper-button-next swiper-button">
                     <svg class="swiper-button-next__icon swiper-button__icon">
                       <use href="./images/sprite.svg#icon-arrow-1"></use>
                     </svg>
-                    <span class="swiper-button-prev__text">Наступна</span>
+                    <span class="swiper-button-prev__text swiper-button__text">Наступна</span>
                 </div> 
               </div>
               <div class="swiper thumbs-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                <div class="swiper-wrapper thumbs-slider__wrapper">
+                  <div class="swiper-slide thumbs-slider__slide">
                     <picture>
                       <source srcset="./images/1920/hero-2.webp" type="image/webp"/>
                       <img
@@ -207,7 +208,7 @@
                       />
                     </picture>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide thumbs-slider__slide">
                     <picture>
                       <source srcset="./images/1920/hero-3.webp" type="image/webp"/>
                       <img
@@ -217,7 +218,7 @@
                       />
                     </picture>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide thumbs-slider__slide">
                     <picture>
                       <source srcset="./images/1920/hero-1.webp" type="image/webp"/>
                       <img
@@ -379,6 +380,7 @@
           <div class="swiper-wrapper partners__slider__wrapper">
             <div class="swiper-slide partners__slider__slide">
               <div class="partners__slider__box-logo">
+                <a href="#" class="partners__slider__link-1 link"> 
                 <picture>
                   <source srcset="./images/logo-1.webp" type="image/webp"/>
                   <img
@@ -388,6 +390,8 @@
                   class="projects__slider__logo logo-1"
                   />
                 </picture>
+                </a>
+              <a href="#" class="partners__slider__link-2 link"> 
                 <picture>
                   <source srcset="./images/logo-2.webp" type="image/webp"/>
                   <img
@@ -397,10 +401,12 @@
                   class="projects__slider__logo logo-2"
                   />
                 </picture>
+                </a>
               </div>
             </div>
             <div class="swiper-slide partners__slider__slide">
               <div class="partners__slider__box-logo">
+                 <a href="#" class="partners__slider__link-2 link"> 
                 <picture>
                   <source srcset="./images/logo-2.webp" type="image/webp"/>
                   <img
@@ -410,6 +416,8 @@
                   class="projects__slider__logo logo-2"
                   />
                 </picture>
+                </a>
+                 <a href="#" class="partners__slider__link-1 link">
                 <picture>
                   <source srcset="./images/logo-1.webp" type="image/webp"/>
                   <img
@@ -419,10 +427,12 @@
                   class="projects__slider__logo logo-1"
                   />
                 </picture>
+                </a>
               </div>
               </div>
             <div class="swiper-slide partners__slider__slide">
               <div class="partners__slider__box-logo">
+                 <a href="#" class="partners__slider__link-1 link"> 
                 <picture>
                   <source srcset="./images/logo-1.webp" type="image/webp"/>
                   <img
@@ -432,6 +442,8 @@
                   class="projects__slider__logo logo-1"
                   />
                 </picture>
+                </a>
+                 <a href="#" class="partners__slider__link-2 link"> 
                 <picture>
                   <source srcset="./images/logo-2.webp" type="image/webp"/>
                   <img
@@ -441,10 +453,12 @@
                   class="projects__slider__logo logo-2"
                   />
                 </picture>
+                </a>
               </div>
               </div>
               <div class="swiper-slide partners__slider__slide">
               <div class="partners__slider__box-logo">
+                 <a href="#" class="partners__slider__link-2 link"> 
                 <picture>
                   <source srcset="./images/logo-2.webp" type="image/webp"/>
                   <img
@@ -454,6 +468,8 @@
                   class="projects__slider__logo logo-2"
                   />
                 </picture>
+                </a>
+                 <a href="#" class="partners__slider__link-1 link"> 
                 <picture>
                   <source srcset="./images/logo-1.webp" type="image/webp"/>
                   <img
@@ -463,6 +479,7 @@
                   class="projects__slider__logo logo-1"
                   />
                 </picture>
+                </a>
               </div>
               </div>
             </div>
