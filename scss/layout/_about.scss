@@ -1,16 +1,13 @@
 .about {
-    margin-top: 80px;
+    margin-top: 50px;
     text-align: center;
-    // padding-bottom: 111px;
 }
-// .about__title {
-//     margin-top: ;
-// }
+
 .about__wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
-    row-gap: 32px;
+    margin-top: 30px;
+    row-gap: 15px;
 }
 
 
@@ -18,7 +15,7 @@
     font-size: 21px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 34px;
+    margin-bottom: 20px;
 }
 
 .about__numbers {
@@ -26,31 +23,46 @@
     margin-left: auto;
 }
 .about__numbers__text {
-font-size: 16px;
-letter-spacing: 0.05em;
-margin-top: 11px;
-}
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-top: 11px;
+    }
 .about__numbers__text-accent {
     color: var(--accent-color);
 }
 .about__numbers__box {
     display: flex;
-    flex-direction: row;
-    gap: 56px;
+    flex-direction: column;
+    gap: 25px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
 }
 .about__numbers__icon {
-width: 70px;
-height: 70px;
-fill: var(--light-color);
+        width: 70px;
+    height: 70px;
+    fill: var(--light-color);
 }
-// .about__numbers__icon-theater {
-//     margin-top: 18px;
-// }
+
 .about__img-wrapper {
     display: none;
+}
+@media screen and (min-width: 576px) {
+    .about {
+        margin-top: 80px;
+    }
+    .about__wrapper {
+        margin-top: 60px;
+        row-gap: 32px;
+    }
+    .about__numbers__title {
+        margin-bottom: 34px;
+    }
+    .about__numbers__box {
+        flex-direction: row;
+        gap: 56px;
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 768px) {

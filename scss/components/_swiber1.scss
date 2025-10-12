@@ -7,6 +7,7 @@
   display: block;
   position: relative;
   width: 350px; 
+  margin-top: 267px;
   margin-right: auto; 
   z-index: 10;
 } 
@@ -16,7 +17,7 @@
   z-index: 95; 
   width: 350px; 
   height: 490px; 
-  top: -115px; 
+  top: 0 
 }
 
 .main-slider__slide img { 
@@ -28,8 +29,8 @@
 .thumbs-slider { 
   position: absolute;
   z-index: 5;
-  top: -95px;
-  left: 18px;
+  top: 20px;
+  left: 20px;
   height: 490px;
   width: 350px;
 }
