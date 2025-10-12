@@ -62,10 +62,6 @@ body {
   margin: 0;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -324,24 +320,24 @@ html, body {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 991px) {
-  .open-mobile-menu-btn {
-    z-index: 101;
-    line-height: 0;
-    border: none;
-    background-color: transparent;
-    margin-right: auto;
-  }
-  .open-mobile-menu-btn__icon {
-    width: 26px;
-    height: 20px;
-    fill: var(--light-color);
-    padding-top: 3px;
-  }
-  .open-mobile-menu-btn__icon:hover, .open-mobile-menu-btn__icon:focus {
-    fill: var(--accent-color);
-  }
+.open-mobile-menu-btn {
+  z-index: 101;
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  margin-right: auto;
 }
+
+.open-mobile-menu-btn__icon {
+  width: 26px;
+  height: 20px;
+  fill: var(--light-color);
+  padding-top: 3px;
+}
+.open-mobile-menu-btn__icon:hover, .open-mobile-menu-btn__icon:focus {
+  fill: var(--accent-color);
+}
+
 .mobile-menu {
   position: absolute;
   top: 0;
@@ -535,7 +531,7 @@ html, body {
 }
 .hero {
   position: relative;
-  width: 100vw;
+  width: 100%;
   background-image: url("../images/576/hero-bg_576.jpg");
   background-size: cover;
   background-repeat: no-repeat;
