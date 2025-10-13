@@ -162,6 +162,9 @@
     .patron {
         margin-top: 160px;
     }
+    .patron__title {
+        margin-bottom: 60px;
+    }
     .patron-form__input-field {  
         display: grid;
         grid-template-columns: 1fr 270px;
@@ -202,7 +205,7 @@
         padding-left: 95px;
     }
     .patron__title {
-        margin-bottom: 97px;
+        margin-bottom: 99px;
     }
     .patron-form__btn__text {
     margin-left: -1px;

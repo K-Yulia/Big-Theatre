@@ -1,42 +1,48 @@
- (() => {
+
+(() => {
   const refs = {
-    openMenuBtn: document.querySelector('[data-menu-open]'),
-    closeMenuBtn: document.querySelector('[data-menu-close]'),
-    menu: document.querySelector('[data-menu]'),
-    header: document.querySelector(".page-header"), 
-    navList: document.querySelector('.js-nav'),
+    openMenuBtn: document.querySelector("[data-menu-open]"),
+    closeMenuBtn: document.querySelector("[data-menu-close]"),
+    menu: document.querySelector("[data-menu]"),
+    header: document.querySelector(".page-header"),
+    navList: document.querySelector(".js-nav"),
   };
 
-  refs.openMenuBtn.addEventListener('click', toggleModal);
-  refs.closeMenuBtn.addEventListener('click', toggleModal);
-  refs.navList.addEventListener('click', onListClick);
-  
-  function toggleModal() {
-    nav = refs.menu.classList.toggle('is-open');
-    if (nav) {
-      document.body.style.overflow = 'hidden'; 
-      refs.header.classList.add("menu-open");
-    } else { document.body.style.overflow = 'scroll'; 
-      refs.header.classList.remove('menu-open');
-    } 
-  }
-}
-)();
+  let scrollPosition = 0;
 
-function onListClick(ev) {
-  refs.burgerMenu.classList.remove('is-open');
-  refs.header.classList.remove("menu-open");
-}
+  const openMenu = () => {
+    scrollPosition = window.scrollY; 
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    refs.menu.classList.add("is-open");
+    refs.header.classList.add("menu-open");
+  };
 
-window.addEventListener("scroll", function () {
-  const header = document.querySelector(".page-header");
-  if (window.scrollY > 70) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
-}
-);
-  
+  const closeMenu = () => {
+    refs.menu.classList.remove("is-open");
+    refs.header.classList.remove("menu-open");
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.width = "";
+    window.scrollTo(0, scrollPosition);
+  };
 
+  refs.openMenuBtn.addEventListener("click", openMenu);
+  refs.closeMenuBtn.addEventListener("click", closeMenu);
+
+  refs.navList.addEventListener("click", (event) => {
+    if (event.target.nodeName === "A") {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 70) {
+      refs.header.classList.add("scrolled");
+    } else {
+      refs.header.classList.remove("scrolled");
+    }
+  });
+})();
 
