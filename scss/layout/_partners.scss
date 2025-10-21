@@ -25,7 +25,7 @@
   margin-right: auto;
 }
 .logo-1 {
-  margin-top: 8px;
+  margin-top: 12px;
   margin-bottom: 8px;
 }
 @media screen and (min-width: 576px) {
@@ -63,6 +63,9 @@
   .partners__slider__box-logo {
     row-gap: 93px;
   }
+  // .logo-1 {
+  //   margin-top: 12px;
+  // }
 }
 @media screen and (min-width: 1440px) {
   .partners {
@@ -76,5 +79,8 @@
   }
   .partners__slider__box-logo {
     row-gap: 130px;
+  }
+  .logo-1 {
+    margin-top: 8px;
   }
 }
