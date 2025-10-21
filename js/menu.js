@@ -1,4 +1,3 @@
-
 (() => {
   const refs = {
     openMenuBtn: document.querySelector("[data-menu-open]"),
@@ -6,12 +5,13 @@
     menu: document.querySelector("[data-menu]"),
     header: document.querySelector(".page-header"),
     navList: document.querySelector(".js-nav"),
+    backdrop: document.querySelector("[data-menu-backdrop]"),
   };
 
   let scrollPosition = 0;
 
   const openMenu = () => {
-    scrollPosition = window.scrollY; 
+    scrollPosition = window.scrollY;
     document.body.style.top = `-${scrollPosition}px`;
     document.body.style.position = "fixed";
     document.body.style.width = "100%";
@@ -37,6 +37,8 @@
     }
   });
 
+  refs.backdrop.addEventListener("click", closeMenu);
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > 70) {
       refs.header.classList.add("scrolled");
@@ -45,4 +47,3 @@
     }
   });
 })();
-

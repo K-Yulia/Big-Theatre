@@ -2,13 +2,13 @@
   margin-top: 50px;
   position: relative;
   width: 100vw;
-  background-image:  linear-gradient( rgba(51, 51, 51, 0.9),
-  rgba(51, 51, 51, 0.9)),
-  url("../images/576/rating-576.jpg");
+  background-image:
+    linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)),
+    url("../images/576/rating-576.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  display: flex;  
+  display: flex;
   align-items: flex-end;
   height: 100%;
 }
@@ -81,9 +81,9 @@
 @media screen and (min-width: 768px) {
   .rating {
     margin-top: 90px;
-    background-image: linear-gradient( rgba(51, 51, 51, 0.9), 
-    rgba(51, 51, 51, 0.9)),
-    url("../images/768/rating-768.jpg");
+    background-image:
+      linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)),
+      url("../images/768/rating-768.png");
   }
   .rating__container {
     margin-top: 124px;
@@ -95,16 +95,16 @@
   }
   .rating__box-stars__text {
     font-size: 29px;
-    line-height: 43px; 
- }
+    line-height: 43px;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .rating {
     margin-top: 150px;
-    background-image: linear-gradient( rgba(51, 51, 51, 0.9), 
-  rgba(51, 51, 51, 0.9)),
-    url("../images/992/rating-992.jpg");
+    background-image:
+      linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)),
+      url("../images/992/rating-992.png");
   }
   .rating__container {
     margin-left: 90px;
@@ -114,9 +114,9 @@
   }
   .rating__box-stars__text {
     font-size: 36px;
-    line-height: 54px; 
+    line-height: 54px;
   }
- .rating__box-stars {
+  .rating__box-stars {
     margin-top: 44px;
   }
 }
@@ -124,9 +124,9 @@
 @media screen and (min-width: 1440px) {
   .rating {
     width: 1111px;
-    background-image: linear-gradient( rgba(51, 51, 51, 0.9),
-    rgba(51, 51, 51, 0.9)),
-    url("../images/1920/rating-1920.jpg");
+    background-image:
+      linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)),
+      url("../images/1920/rating-1920.png");
     margin-top: 90px;
     margin-left: auto;
     margin-right: auto;

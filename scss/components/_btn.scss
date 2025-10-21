@@ -1,22 +1,22 @@
 .btn {
-display: block;   
-width: auto;            
-height: auto; 
-font-family: var(--primary-font);
-font-size: 18px;
-font-weight: 700;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-text-align: center;
-padding: 13px 49px;
-background: var(--accent-color);
-color: var(--text-color-primary);
-border: transparent;
-cursor: pointer;
-transition: transform var(--transition-animation);
+  display: block;
+  width: auto;
+  height: auto;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px 49px;
+  background: var(--accent-color);
+  color: var(--text-color-primary);
+  border: transparent;
+  cursor: pointer;
+  transition: transform var(--transition-animation);
 
-&:focus,
-&:hover {
-transform: scale(1.05);
-}
+  &:focus,
+  &:hover {
+    transform: scale(1.05);
+  }
 }
