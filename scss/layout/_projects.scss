@@ -83,7 +83,7 @@
 .projects__slider__span {
   z-index: 5;
   position: absolute;
-  bottom: 85px;
+  bottom: 87px;
   left: -8px;
   transform: rotate(-90deg);
   font-size: 18px;
@@ -107,7 +107,7 @@
     margin-top: 84px;
   }
   .projects__slider__span {
-    bottom: 87px;
+    bottom: 89px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -124,6 +124,7 @@
   }
   .projects__slider__span {
     left: -10px;
+    bottom: 87px;
   }
 }
 @media screen and (min-width: 1440px) {
